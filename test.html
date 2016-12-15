@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/basic.css">
+</head>
+
+<body id="body">
+    <script>
+        'use strict';
+        var black = document.createElement('div');
+        body.appendChild(black)
+        document.addEventListener('keydown', (event) => {
+            if (event.keyCode === 65) {
+                black.className = 'none';
+                black.className = 'black';
+                black.innerHTML = `<audio src="music/038.mp3" autoplay>
+                Your browser does not support the <code>audio</code> element.
+                </audio>`
+                return black;
+            }
+            if (event.keyCode === 83) {
+                black.className = 'none';
+                black.className = 'green';
+                black.innerHTML = `<audio src="music/Piano1.ogg" autoplay>
+                Your browser does not support the <code>audio</code> element.
+                </audio>`
+                return black;
+            }
+            if (event.keyCode === 68) {
+                black.className = 'none';
+                black.className = 'red';
+                black.innerHTML = `<audio src="music/sound.mp3" autoplay>
+                Your browser does not support the <code>audio</code> element.
+                </audio>`
+                return black;
+            }
+            if (event.keyCode === 70) {
+                black.className = 'none';
+                black.className = 'skull';
+                black.innerHTML = `<audio src="music/mq.mp3" autoplay>
+                Your browser does not support the <code>audio</code> element.
+                </audio>`
+                return black;
+            }
+        }, false);
+    </script>
+</body>
+
+</html>
