@@ -1,3 +1,8 @@
+.container {
+    color: white;
+    background-color: rebeccapurple;
+}
+
 .none {
     visibility: hidden;
 }
@@ -30,7 +35,7 @@
     width: 500px;
     height: 500px;
     margin: 0 auto;
-    background-image: url(../img/skull.jpg);
+    background-image: url(../img/480.png);
     background-repeat: no-repeat;
     background-size: cover;
     animation: skull 1s infinite;
@@ -73,14 +78,22 @@
 }
 
 @keyframes skull {
-    0% {
-        background: black;
+    50% {
+        transform: rotate(-90deg)
     }
-    5% {
-        background: silver;
-        opacity: 50px;
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(15deg)
+    }
+    /*50% {
+        transform: rotate(180deg)
+    }
+    50% {
+        transform: rotate(270deg)
     }
     100% {
-        background-image: url(../img/skull.jpg);
-    }
+        transform: rotate(0deg)
+    }*/
 }
