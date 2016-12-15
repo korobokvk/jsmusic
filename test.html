@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/basic.css">
 </head>
 
-<body id="body">
+<body>
     <div class="container">
         <h2 id="list">CHOOSE THE SOUND!!!</h2>
         <ul id="list">
@@ -15,13 +15,13 @@
             <li>HARD ROCK MUTHERFUCKER!!! PRESS F</li>
         </ul>
     </div>
+    <div id="black"></div>
     <script>
         'use strict';
-        var black = document.createElement('div');
-        body.appendChild(black)
+        // const black = document.createElement('div');
+        // body.appendChild(black);
         document.addEventListener('keydown', (event) => {
             if (event.keyCode === 65) {
-                black.className = 'none';
                 black.className = 'black';
                 black.innerHTML = `<audio src="music/038.mp3" autoplay>
                 Your browser does not support the <code>audio</code> element.
@@ -29,7 +29,6 @@
                 return black;
             }
             if (event.keyCode === 83) {
-                black.className = 'none';
                 black.className = 'green';
                 black.innerHTML = `<audio src="music/Piano1.ogg" autoplay>
                 Your browser does not support the <code>audio</code> element.
@@ -37,7 +36,6 @@
                 return black;
             }
             if (event.keyCode === 68) {
-                black.className = 'none';
                 black.className = 'red';
                 black.innerHTML = `<audio src="music/sound.mp3" autoplay>
                 Your browser does not support the <code>audio</code> element.
@@ -45,7 +43,6 @@
                 return black;
             }
             if (event.keyCode === 70) {
-                black.className = 'none';
                 black.className = 'skull';
                 black.innerHTML = `<audio src="music/mq.mp3" autoplay>
                 Your browser does not support the <code>audio</code> element.
